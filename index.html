@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TODO list</title>
+  <meta name="description" content="JS Native TODO list">
+  <meta name="author" content="Alyonka Shevchenko">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div class="todos">
+            <h1 id="todos-header">My todos</h1>
+
+            <div class="row todos-new">
+              <div id="div-new-task" class="col-xs-8 col-sm-8 col-md-8">
+                <input id="new-task" class="form-control" type="text" placeholder="Add todo-task">
+              </div>
+              <div id="div-add-task" class="col-xs-4 col-sm-4 col-md-4">
+                <button id="add-task" class="btn btn-success form-control" type="button">Add task</button>
+              </div>
+            </div>  
+
+            <ul id="todos-list" class="list-unstyled">
+              <li class="todo-task">
+                <span class="todo-desc">wake up with the sun</span>
+                <button class="remove-task btn btn-default btn-xs pull-right">
+                  <span class="glyphicon glyphicon-remove"></span>
+                </button>
+              </li>
+              <li class="todo-task">
+                <span class="todo-desc">walk the dog</span>
+                <button class="remove-task btn btn-default btn-xs pull-right">
+                  <span class="glyphicon glyphicon-remove"></span>
+                </button>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <template>
+    <li class="todo-task">
+      <span class="todo-desc">{{task desc}}</span>
+      <button class="remove-task btn btn-default btn-xs pull-right">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+    </li>
+  </template>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
